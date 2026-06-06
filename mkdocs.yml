@@ -1,0 +1,90 @@
+site_name: Smart Infrastructure & Civil Engineering Documentation Program
+site_description: Enterprise Documentation Architecture and Knowledge Management Program
+site_author: Senior Technical Documentation Architect
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+
+nav:
+  - Executive Summary: index.md
+  - Strategy & Governance:
+      - Documentation Vision and Strategy: strategy/vision.md
+      - Enterprise Documentation Governance Framework: strategy/governance.md
+      - Information Architecture Blueprint: strategy/architecture.md
+      - Knowledge Management Program: strategy/knowledge-management.md
+      - Content Ownership Model: strategy/ownership.md
+      - Documentation Lifecycle Model: strategy/lifecycle.md
+      - Documentation Review Framework: strategy/review.md
+  - Standards & Information Architecture:
+      - Taxonomy Design: standards/taxonomy.md
+      - Metadata Standards: standards/metadata.md
+      - Documentation Templates: standards/templates.md
+      - Documentation Standards: standards/standards.md
+      - Documentation Style Guide: standards/style-guide.md
+  - Infrastructure & Engineering Architecture:
+      - Engineering Documentation Architecture: engineering/architecture.md
+      - Infrastructure Asset Documentation System: engineering/asset-system.md
+      - Asset Lifecycle Documentation: engineering/asset-lifecycle.md
+      - Bridge Maintenance Documentation: engineering/bridge.md
+      - Rail Operations Documentation: engineering/rail.md
+      - Traffic Management Documentation: engineering/traffic.md
+      - Utilities Documentation Framework: engineering/utilities.md
+      - Water Infrastructure Documentation: engineering/water.md
+  - Operations & Maintenance:
+      - Standard Operating Procedures Library: operations/sop-library.md
+      - Operations Manual: operations/ops-manual.md
+      - Maintenance Manual: operations/maintenance-manual.md
+      - Troubleshooting Manual: operations/troubleshooting.md
+      - Technical Reference Manual: operations/technical-reference.md
+      - Preventive Maintenance Documentation: operations/preventive-maintenance.md
+      - Engineering Change Documentation Process: operations/change-process.md
+  - Risk, Safety & Compliance:
+      - Emergency Response Documentation: compliance/emergency.md
+      - Incident Management Documentation: compliance/incident.md
+      - Risk Assessment Documentation: compliance/risk-assessment.md
+      - Safety Documentation Framework: compliance/safety.md
+      - Regulatory Compliance Documentation: compliance/regulatory.md
+      - Documentation Risk Register: compliance/risk-register.md
+  - Knowledge Base & Training:
+      - Knowledge Base Architecture: knowledge/architecture.md
+      - Search Strategy Design: knowledge/search-strategy.md
+      - Training and Learning Framework: knowledge/training.md
+      - Certification Program Documentation: knowledge/certification.md
+  - Metrics, Analytics & ROI:
+      - Documentation Quality Assurance Framework: metrics/qa-framework.md
+      - Content Audit Methodology: metrics/audit.md
+      - Documentation Analytics Program: metrics/analytics.md
+      - Documentation KPIs: metrics/kpis.md
+      - Documentation ROI Framework: metrics/roi.md
+      - Content Health Metrics: metrics/health.md
+      - Governance Dashboard: metrics/dashboard.md
+  - Leadership & Future State:
+      - Stakeholder Communication Framework: leadership/stakeholders.md
+      - Cross-Functional Collaboration Model: leadership/collaboration.md
+      - Enterprise Documentation Roadmap: leadership/roadmap.md
+      - Future-State Documentation Architecture: leadership/future-state.md
+      - Senior Technical Writer Leadership Contributions: leadership/contributions.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - tables
+  - toc:
+      permalink: true
