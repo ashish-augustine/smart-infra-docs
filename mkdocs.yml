@@ -42,6 +42,8 @@ nav:
       - Traffic Management Documentation: engineering/traffic.md
       - Utilities Documentation Framework: engineering/utilities.md
       - Water Infrastructure Documentation: engineering/water.md
+  - Quality Assurance:
+      - Documentation Quality Audit: quality/audit.md
   - Operations & Maintenance:
       - Standard Operating Procedures Library: operations/sop-library.md
       - Operations Manual: operations/ops-manual.md
