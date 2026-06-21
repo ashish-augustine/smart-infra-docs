@@ -44,3 +44,4 @@ flowchart TD
     
     I --> J[PR Merged to Main]
     J --> K[Automated Notification Sent to Original Reporter]
+```

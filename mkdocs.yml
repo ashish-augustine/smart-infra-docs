@@ -1,31 +1,40 @@
 site_name: Enterprise Infrastructure Documentation
+
 theme:
   name: material
   features:
-    - navigation.sections # This creates clean dropdown arrows in the left sidebar
-    - navigation.top      # Adds a "back to top" button
-    - toc.integrate       # Integrates the table of contents into the left sidebar for a unified look
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+
+# This block tells MkDocs how to render Mermaid diagrams
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 nav:
   - Home: index.md
   - Strategy & Standards:
-    - Documentation Vision and Strategy: strategy/vision.md
-    - Enterprise Documentation Governance: strategy/governance.md
-    - Knowledge Management Program: strategy/knowledge-management.md
-    - Content Ownership Model: strategy/ownership.md
-    - Documentation Lifecycle Model: strategy/lifecycle.md
-    - Information Architecture Blueprint: strategy/architecture.md
-    - Enterprise Taxonomy Design: standards/taxonomy.md
-    - Enterprise Metadata Standards: standards/metadata.md
+      - Documentation Vision and Strategy: strategy/vision.md
+      - Enterprise Documentation Governance: strategy/governance.md
+      - Knowledge Management Program: strategy/knowledge-management.md
+      - Content Ownership Model: strategy/ownership.md
+      - Documentation Lifecycle Model: strategy/lifecycle.md
+      - Information Architecture Blueprint: strategy/architecture.md
+      - Enterprise Taxonomy Design: standards/taxonomy.md
+      - Enterprise Metadata Standards: standards/metadata.md
   - Engineering Modules:
-    - Cyber-Physical Architecture: engineering/architecture.md
-    - Infrastructure Asset System: engineering/asset-system.md
-    - Asset Lifecycle Documentation: engineering/asset-lifecycle.md
-    - Bridge Maintenance Docs: engineering/bridge.md
-    - Rail Operations Docs: engineering/rail.md
-    - Traffic Management Docs: engineering/traffic.md
-    - Utilities Framework: engineering/utilities.md
-    - Water Infrastructure Docs: engineering/water.md
+      - Cyber-Physical Architecture: engineering/architecture.md
+      - Infrastructure Asset System: engineering/asset-system.md
+      - Asset Lifecycle Documentation: engineering/asset-lifecycle.md
+      - Bridge Maintenance Docs: engineering/bridge.md
+      - Rail Operations Docs: engineering/rail.md
+      - Traffic Management Docs: engineering/traffic.md
+      - Utilities Framework: engineering/utilities.md
+      - Water Infrastructure Docs: engineering/water.md
   - Quality Assurance:
-    - Documentation Quality Audit: quality/audit.md
-    - Continuous Improvement: quality/feedback.md
+      - Documentation Quality Audit: quality/audit.md
+      - Continuous Improvement: quality/feedback.md
